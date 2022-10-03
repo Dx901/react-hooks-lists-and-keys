@@ -9,6 +9,11 @@ function ColorList() {
     "hotpink",
   ];
 
+  const colorElements = colors.map((color) => {
+    return <ColorItem key={color} color={color}/>
+  })
+
+
   return (
     <div>
       <h1>Top 5 CSS Colors</h1>
